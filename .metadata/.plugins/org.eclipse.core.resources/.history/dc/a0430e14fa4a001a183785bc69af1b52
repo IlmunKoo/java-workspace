@@ -1,0 +1,44 @@
+package operator;
+
+public class OperatorEx3 {
+
+	public static void main(String[] args) {
+ int num1 =10;
+ int i = 2;
+ 
+ boolean value = ( ( num1 = num1 + 10) < 10 ) && (( i = i + 2 ) < 10);
+  //앞쪽만 봐도 False인 것을 알 수 있기 때문에 뒤쪽은 evaluation하지 않음
+ // num1 = 20, i =2인 이유
+ //이를 short circuit evaluation이라 한다
+  System.out.println(num1);
+  System.out.println(i);
+  
+  System.out.println(value);
+  
+  
+  int num2 = 10;
+  int j = 2;
+  
+  boolean value2 = ( ( num2 = num2 + 10) < 10 ) || (( j = j + 2 ) < 10);
+  // ||(or)의 경우 앞이 false라 해서  끝낼 수 없고 뒤에까지 계산해야 함
+  //이를 단락회로평가라 함
+  // num2 = 20, j = 4
+  System.out.println(num2);
+  System.out.println(j);
+  
+  System.out.println(value2);
+  
+  
+  int num3 = 10;
+  int num4 = 20;
+  
+  
+  int max = (num3 > num4)? num3 : num4 ; 
+  // num3와  num4 중 num3가 크면 앞에 값을 출력, 작으면 뒤에 값을  출력;
+  System.out.println(max);
+  
+  
+  
+	}
+
+}

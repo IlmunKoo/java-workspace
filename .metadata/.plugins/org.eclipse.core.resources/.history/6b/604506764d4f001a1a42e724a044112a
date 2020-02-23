@@ -1,0 +1,16 @@
+package hiding;
+
+public class MyDate {
+//접근 제어자: 변수, 메서드, 생성자에 , 아무것도 안 쓰는 경우(기본 접근 제어자, 같은 패키지에서는 보이지만 다른 패키지에서는 안보임)대한 접근 권한 지정
+//public, private, protected 등
+// 상위 클래스가 가진 private 변수/매서드를 하위클래스에 public하게 open하고싶을 때,
+	public static void main(String[] args) {
+		
+		int day;
+		int month;
+		int year;
+		
+패키지가 다른 경우를 참조하고 싶을 때 public을 넣어준다
+	}
+
+}

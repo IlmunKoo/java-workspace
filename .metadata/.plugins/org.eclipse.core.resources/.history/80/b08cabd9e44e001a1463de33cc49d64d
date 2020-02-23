@@ -1,0 +1,14 @@
+package loopexample;
+
+public class Order {
+	double orderNumber;
+	char customerId;
+	String orderDate;
+	String customerName;
+	char commodityNumber;
+	String address;
+	
+
+	
+	
+}

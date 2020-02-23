@@ -1,0 +1,18 @@
+package classpart;
+
+public class Student {
+	//class 는 객체의 청사진: 객체의 기능 구현 담당 but 객체의 속성값 대입되지는 않음> 대입하려면 객체 생성해서 써야 함
+	public int studentID;
+	//public>> 접근 제어자(access modifier), 써도 되고 안 써도 됨
+	public String studentName;
+	public String address;
+	//멤버 변수 혹은 속성이라고 불림-> 속
+	// 학생의 정보를 보여줌>> 기능: 메서드로 구현
+	
+	public void showStudenInfo() {
+	System.out.println(studentName + ","+ address);}
+	//void: 반환하는 값의 데이터타입, 반환하는 것이 아무것도 없을 때는 void를 사용
+	
+	
+
+}

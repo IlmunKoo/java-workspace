@@ -1,0 +1,32 @@
+package loopexample;
+
+import java.util.Scanner;
+
+public class sachick {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		char operator = '+';
+		
+		int num1 = scanner.nextInt();
+		int num2 = scanner.nextInt();
+		
+		int result = 0 ;
+		
+		if(operator == '+') {
+			result = num1 + num2;
+		}
+		else if(operator == '-') {
+			result = num1 - num2;
+		}
+		else if (operator == '/') {
+			result = num1 / num2;
+	}   else if (operator == 'X') {
+		    result = num1 * num2;
+	}
+		
+	}
+
+}

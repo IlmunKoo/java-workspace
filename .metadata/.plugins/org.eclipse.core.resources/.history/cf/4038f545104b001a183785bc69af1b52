@@ -1,0 +1,33 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class SwitchCaseEx {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		//scanner 빨간색-> ctrl+shift+o 자동 임포트
+		
+		int rank = scanner.next.Int();
+		char medalColor;
+		
+		switch(rank) {
+		case 1 : medalColor = 'G';
+		    break;
+		    System.out.println("금메달")
+		    //case가 끝났다는 의미로 break를 써 줘야 함, case문에는 중괄호 쓰지 않음
+		case 2 : medalColor = 'S';
+		    break;
+		    System.out.println("은메달")
+		case 3 : medalColor = 'B';
+		    break;
+		    System.out.println("동메달")
+		default : medalColor = 'A';		
+		
+		}
+		
+		System.out.println(rank + "등은" + medalColor + "메달 입니다.")
+	}
+
+}

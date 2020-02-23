@@ -1,0 +1,22 @@
+package reference;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		//가져다 쓰는 방법? 일단 학생을 생성
+		Student studentLee = new Student(100, "Lee");
+		studentLee.setKoreaSubject("국어", 100);
+		studentLee.setMathSubject("수학", 95);
+		
+		
+		Student studentKim = new Student(101, "Kim");
+		studentLee.setKoreaSubject("국어", 80);
+		studentLee.setMathSubject("수학", 99);
+		
+		studentLee.showStudentScore();
+		studentKim.showStudentScore();
+		//매서드를 호출
+
+	}
+
+}

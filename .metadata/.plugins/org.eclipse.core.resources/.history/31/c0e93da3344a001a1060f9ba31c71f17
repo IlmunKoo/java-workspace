@@ -1,0 +1,16 @@
+package variable;
+
+public class ImplicitConversion {
+
+	public static void main(String[] args) {
+byte bNum = 10;
+int iNum =bNum;
+//int는 4바이트, byte는 1바이트 >> bNum이 iNum으로 들어가는데는 아무 문제 없음
+
+System.out.println(bNum);
+System.out.println(iNum);
+
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package loopexample;
+
+public class break_continue_prac1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

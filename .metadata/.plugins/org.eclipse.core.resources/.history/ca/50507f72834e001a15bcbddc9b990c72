@@ -1,0 +1,47 @@
+package classpart;
+
+public class FunctionTest {
+	
+	public static int addNum(int num1, int num2) {
+		int result;
+		result = num1 + num2;
+		return result;
+	}
+	
+	public static void sayHello(String greeting) {
+		System.out.println(greeting);
+	}// void: 반환하는 것(return)은 없고 출력하고 끝
+	
+	public static int calcSum() { //매개변수 필요 없이 return만 있음
+		int sum = 0;
+		int i;
+		
+		for(i = 0; i <= 100; i++) {
+			sum += i;
+			
+		}
+		return sum;
+		
+		//함수는 호출해줘야 작동이 됨
+	}
+
+	public static void main(String[] args) {
+		
+		int n1 = 10;
+		int n2 = 20;
+		
+		addNum(n1, n2);  //이러면 n1=10, n2=20을 각각 위에 int num1 , int num2로  넘겨주게 됨
+		int total = addNum(n1, n2); //int result = num1 + num2; 이므로 int로 받아줘야 함
+		
+		// int num = sayHello("안녕하세요"); //void이므로 받는것이 아님! (return 없음)
+		sayHello("안녕하세요");
+		int num = calcSum();
+		
+		System.out.println(total);
+		System.out.println(num);
+		
+		
+
+	}
+
+}

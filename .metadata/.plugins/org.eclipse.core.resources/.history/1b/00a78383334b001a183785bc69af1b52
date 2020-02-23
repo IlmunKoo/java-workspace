@@ -1,0 +1,29 @@
+package loopexample;
+
+public class WhileExample {
+
+	public static void main(String[] args) {
+       int num =1;
+       int sum = 0;
+       
+       
+       while (num <= 10) {
+    	   //while(true) >> 무한루프
+       sum += num;
+       num++; //11이 됐을 때 빠져나오게 됨
+    		        }
+System.out.println(sum);
+System.out.println(num);
+	}
+
+}
+
+
+// sum += num; >> sum과 num을 더해서 완쪽 sum자리에 넣는다
+//num++>> 1을 더한 후 다시 while 조건문에 대입 num =2 sum =1
+//sum += num >> num =2 sum= 3
+//num++>>num =3  (3,3)
+//sum = 6, num =4
+//sum = 10, num = 5
+//sum = 55, num = 10
+//num= 11 까지 돌고 빠져나옴  

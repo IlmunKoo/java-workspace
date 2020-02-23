@@ -1,0 +1,23 @@
+package classpart;
+
+public class StudentClass {
+
+	public static void main(String[] args) {
+		//클래스의 메인은 없는 경우가 대부분
+		//웹서버가 없으니 standalone으로 여기서 돌려봐야 함
+		Student studentlee = new Student();
+		//Student라는 클래스 이름으로 변수선언, new는 생성한다는 의미, Student:클래스 이름과 동일
+		//Student 변수 생성할 경우 Heap(다이나믹 메모리, 동적 메모리)에 저장
+		
+		//메모리에 클래스 생성
+		studentlee.studentName = "이순신";
+		studentlee.address = "서울";
+		
+		studentlee.showStudenInfo();
+		
+		//자바 파일 하나에 여러 개의 클래스 존재 가능, but public클래스는 하나, pulic class이름 = 자바 파일 이름이어야 함
+		
+
+	}
+
+}

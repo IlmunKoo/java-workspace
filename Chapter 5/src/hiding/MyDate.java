@@ -1,0 +1,66 @@
+package hiding;
+
+public class MyDate {
+//접근 제어자: 변수, 메서드, 생성자에 , 아무것도 안 쓰는 경우(기본 접근 제어자, 같은 패키지에서는 보이지만 다른 패키지에서는 안보임)대한 접근 권한 지정
+//public, private, protected 등
+// 상위 클래스가 가진 private 변수/매서드를 하위클래스에 public하게 open하고싶을 때,
+	
+	private int day;
+	private int month;
+	private int year;
+	//이경우 Test에서 day month year를 못 사용함
+	private boolean IsValid;
+	//멤버변수일 때 초기값 false
+	
+	
+	public void setDay(int day) {
+		//날짜를 설정해주고 싶다! 하면 매개변수로 ()에 날짜를 하나 받음
+		this.day = day;
+		//멤버변수의 경우와 넘어오는 매개변수의 이름이 동일한 경우가 많음> 이 경우 구별을 위해  멤버변수 앞에 this 를 사용
+		//this를 뺄 경우 가장 가까운 변수로 인식, 매개변수 day를 day에 대입하겠다는 뜻		
+	}
+	//get 만 하고 set 은 못한다: read-only (id와같은 고유한 중요한 정보들 보호목적)
+	public int getDay() {
+		//주로 사용하는 것을 이름에 같이 붙여줌, get처럼
+	  return day;
+	  //void없는 함수 썼으면 return까지 해줘야 함
+	  	  }
+		
+	//마우스 오른쪽 > source > getters and setters 들어가면 private걸린 것들 삽입할 수 있음
+		public int getMonth() {
+		return month;
+	}
+	public void setMonth(int month) {
+		
+		if(month < 1 || month > 12) {
+			IsValid = false;
+			}
+		else
+			
+		this.month = month;
+	}
+	public int getYear() {
+		return year;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
+		public void showDate() {
+			
+			if(IsValid) {
+			System.out.println(year + "년" + month + "월" + day +"일 입니다. ");
+			//얘가 따지면 함수정의해놓은것, 함수실행(호출)은 MyDateTest에서!
+			}
+			else {
+				System.out.println("유효하지 않은 날짜입니다");
+			}
+		
+//다른 패키지를 참조하고 싶을 때 public을 넣어준다
+		}
+}
+//정리 private으로 돌린 후 메서드로 끌어 쓰는 것이 정보의 보호이자 오류 방지!
+//모든 변수는 private? 그럴 필요는 없다! private으로 해야만 하는 것들만 제대로
+//getter setter: 값을 넣고 빼는 것, 매서드 이름에 이를 넣어 알기 쉽게 한다
+	
+
+

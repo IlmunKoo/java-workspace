@@ -1,0 +1,23 @@
+package thisex;
+
+public class Person {
+
+	
+	String name;
+	int age;
+	//멤버변수 안 썼을 때 string: null, age는 0으로 초기화됨
+	
+	
+	public Person() {
+		this("이름 없음", 1);
+	}
+	//(): 디폴트 컨스트럭터(기본 생성자)
+	public Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+		
+	}
+	public void showInfo() {
+		System.out.println(name + "," + age);
+	}
+}

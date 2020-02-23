@@ -1,0 +1,15 @@
+package variable;
+
+public class ExplicitConversion {
+
+	public static void main(String[] args) {
+
+		int i = 1000;
+		byte bNum = (byte)i;
+		//4바이트가 1바이트에 들어가면 오류, 그래도 넣고싶으면 명시적 형변환but 데이터 유실 위험
+		// -128~127까지 표현가능
+		System.out.println(bNum);
+		
+	}
+
+}

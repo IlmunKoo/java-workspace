@@ -1,0 +1,34 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class IfExample2 {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		//Scanner: 입력을 도와주는 클래스
+		//System.in: 입력용 스트링(표준입력)>> 콘솔에서 입력가능
+		int age = scanner.nextInt();
+		
+		
+		int age = 10;
+		int charge = 0;
+		
+		if(age < 8) {
+			charge = 1000;
+		}else if(age < 14) {
+			charge = 1500;
+				}
+		else if (age < 20) {
+			charge = 2000;
+		}
+		else {
+			charge = 3000;
+		}
+System.out.println("나이: " + age);
+System.out.println("요금: " + charge);
+	}
+
+}
