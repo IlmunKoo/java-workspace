@@ -1,0 +1,10 @@
+﻿  main1.c
+C:\Users\구일문\source\repos\강의1\main1.c(8,8): warning C4013: 'system'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  main2.c
+C:\Users\구일문\source\repos\강의1\main2.c(11,8): warning C4013: 'system'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  main3.c
+C:\Users\구일문\source\repos\강의1\main3.c(16,8): warning C4013: 'system'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  코드를 생성하고 있습니다...
+main2.obj : error LNK2005: _main이(가) main1.obj에 이미 정의되어 있습니다.
+main3.obj : error LNK2005: _main이(가) main1.obj에 이미 정의되어 있습니다.
+C:\Users\구일문\source\repos\강의1\Debug\강의1.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
