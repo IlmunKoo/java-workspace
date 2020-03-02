@@ -1,0 +1,5 @@
+﻿  main2.c
+C:\Users\구일문\source\repos\강의18(전처리기)\main2.c(16,8): warning C4013: 'system'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  temp.c
+  코드를 생성하고 있습니다...
+  강의18(전처리기).vcxproj -> C:\Users\구일문\source\repos\강의18(전처리기)\Debug\강의18(전처리기).exe
